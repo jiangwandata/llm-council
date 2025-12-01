@@ -38,6 +38,9 @@ Create a `.env` file in the project root:
 
 ```bash
 OPENROUTER_API_KEY=sk-or-v1-...
+# Or switch to DeepSeek by setting the provider and key
+# LLM_PROVIDER=deepseek
+# DEEPSEEK_API_KEY=sk-...
 ```
 
 Get your API key at [openrouter.ai](https://openrouter.ai/). Make sure to purchase the credits you need, or sign up for automatic top up.
@@ -55,6 +58,10 @@ COUNCIL_MODELS = [
 ]
 
 CHAIRMAN_MODEL = "google/gemini-3-pro-preview"
+
+# Or, for DeepSeek (provider set to deepseek):
+# COUNCIL_MODELS = ["deepseek-reasoner"]
+# CHAIRMAN_MODEL = "deepseek-reasoner"
 ```
 
 ## Running the Application
